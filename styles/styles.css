@@ -36,11 +36,13 @@ aside{
     padding: 1rem;
     background-color: #eee;
     text-align: center;
-    
+    color: #333;
   
 }
 aside img {
     width: 200px;
+    height: auto;
+
 
 }
 
