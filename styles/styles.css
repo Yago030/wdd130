@@ -1,61 +1,88 @@
 :root {
-    --blue-color:  darkblue;
-    --dark-color: black;
-    --light-gray: #eee;
-    --text-color: #333;
-    --padding-default: 1rem;
+  --blue-color: rgb(72, 72, 240);
+  --dark-color: black;
+  --orange-color: orangered;
+  --light-gray: #eee;
+  --white-color:white;
+  --text-color: #333;
+  --padding-default: 1rem;
+  --margin-default: 1rem;
+  --white-color:white;
 }
 
-main{
-    max-width: 840px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
-    background-color: var( --blue-color);
-    padding: 10px;
+main {
+  max-width: 840px;
 }
 
-nav a{
-    color: white;
-    display: block;
-    padding: 20px;
-}
-h1{
-    color: darkblue;
+nav {
+  background-color: var(--blue-color);
+  padding: 10px;
 }
 
-main img{
-    width: 150px;
-    height: auto;
-    border: 1px solid var(--dark-color);
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+nav a {
+  color: white;
+  display: block;
+  padding: 20px;
+}
+h1 {
+  color: darkblue;
+  padding:var(--padding-default);
 }
 
-p{
-    padding: 0;
+main img {
+  width: 150px;
+  height: auto;
+  border: 1px solid var(--dark-color);
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+  float: right;
 }
 
-
-aside{
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: var(--padding-default);
-    background-color: var(--light-gray);
-    text-align: center;
-    color: var(--text-color);
-  
+p {
+  padding: 0;
+  margin: var(--margin-default);
 }
+
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: var(--padding-default);
+  background-color: var(--light-gray);
+  text-align: center;
+  color: var(--text-color);
+  position: relative;
+}
+
+aside h2{
+    position: absolute;
+    top: 27px;
+    left: 50px;
+}
+
 aside img {
-    width: 200px;
-    height: auto;
-
-
+  width: 200px;
+  height: auto;
 }
 
-footer{
-    margin-top: 15px;
-    border-top: 1px solid var(--dark-color);
-    text-align: center;
+footer {
+  margin-top: 15px;
+  border-top: 1px solid var(--dark-color);
+  text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+  border: 1px solid rgb(0 0 0 /10%);
+  padding: var(--padding-default);
+  margin: var(--margin-default);
+  color: var(--white-color);
+  background-color: var(--blue-color);
 }
