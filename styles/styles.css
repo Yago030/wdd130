@@ -3,11 +3,10 @@
   --dark-color: black;
   --orange-color: orangered;
   --light-gray: #eee;
-  --white-color:white;
+  --white-color: white;
   --text-color: #333;
   --padding-default: 1rem;
   --margin-default: 1rem;
-  --white-color:white;
 }
 
 * {
@@ -16,21 +15,29 @@
   box-sizing: border-box;
 }
 
-header, .grid,  footer{
+header {
   max-width: 840px;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 
-.grid{
+.grid {
+  max-width: 840px;
+  margin: 0 auto;
   display: grid;
   align-items: center;
 }
 
-main{
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+main {
   grid-column: 2/3;
   margin: 1rem;
 }
-aside{
+
+aside {
   width: 20rem;
   position: relative;
   grid-column: 1/2;
@@ -52,11 +59,13 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: white;
 }
+
+
 h1 {
   color: rgb(11, 11, 233);
-  padding:var(--padding-default);
+  padding: var(--padding-default);
+  border-bottom: 1px solid var(--dark-color); 
 }
 
 main img {
@@ -84,10 +93,10 @@ aside {
   position: relative;
 }
 
-aside h2{
-    position: absolute;
-    top: 27px;
-    left: 50px;
+aside h2 {
+  position: absolute;
+  top: 27px;
+  left: 50px;
 }
 
 aside img {
@@ -101,7 +110,6 @@ footer {
   text-align: center;
 }
 
-/* Class Selectors */
 
 .box {
   border: 1px solid rgb(0 0 0 /10%);
