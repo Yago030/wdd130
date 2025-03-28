@@ -1,5 +1,5 @@
 :root {
-  --blue-color: rgb(72, 72, 240);
+  --blue-color: rgb(117, 117, 128);
   --dark-color: black;
   --orange-color: orangered;
   --light-gray: #eee;
@@ -16,22 +16,46 @@
   box-sizing: border-box;
 }
 
-main {
+header, .grid,  footer{
   max-width: 840px;
+  margin : 0 auto;
+}
+
+.grid{
+  display: grid;
+  align-items: center;
+}
+
+main{
+  grid-column: 2/3;
+  margin: 1rem;
+}
+aside{
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 nav {
   background-color: var(--blue-color);
-  padding: 10px;
+  padding: 1px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav a {
   color: white;
   display: block;
-  padding: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
 }
 h1 {
-  color: darkblue;
+  color: rgb(11, 11, 233);
   padding:var(--padding-default);
 }
 
