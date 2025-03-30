@@ -111,3 +111,13 @@ nav a {
   float: right;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .social-links {
+  display: flex;
+  gap: 1rem;
+}
