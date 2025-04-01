@@ -40,11 +40,18 @@ h1, h2, h3 {
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   background-color: var(--primary-color);
   padding: 1rem;
+}
+
+.header-container nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
 }
 
 .header-container img {
