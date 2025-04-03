@@ -91,39 +91,42 @@
 
       <section class="contact-form">
         <h2>Contact Us</h2>
-        <form >
+        <form>
           <label for="fullname">Full Name:</label>
           <input type="text" id="fullname" name="fullname" required />
-
+      
           <label for="email">Email Address:</label>
           <input type="email" id="email" name="email" required />
-
+      
           <p>Purpose of your message:</p>
-          <label
-            ><input type="radio" name="purpose" value="general" /> General
-            Inquiry</label
-          >
-          <label
-            ><input type="radio" name="purpose" value="booking" /> Booking
-            Question</label
-          >
-          <label
-            ><input type="radio" name="purpose" value="suggestion" /> Website
-            Suggestion</label
-          >
-
+          <label for="purpose-general">
+            <input type="radio" id="purpose-general" name="purpose" value="general" />
+            General Inquiry
+          </label>
+      
+          <label for="purpose-booking">
+            <input type="radio" id="purpose-booking" name="purpose" value="booking" />
+            Booking Question
+          </label>
+      
+          <label for="purpose-suggestion">
+            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion" />
+            Website Suggestion
+          </label>
+      
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
-
-          <label>
-            <input type="checkbox" name="subscribe" />
+      
+          <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" />
             Subscribe me to the monthly newsletter
           </label>
-
+      
+          <!-- Botón -->
           <button type="submit">Send Message</button>
         </form>
       </section>
-
+      
       <p class="wireframe">
         <a href="https://app.moqups.com/xU1inrL2wMDRSD0JRefQRPxMP8flY7RZ/view/page/ad64222d5" target="_blank">View Wireframe</a>
       </p>
